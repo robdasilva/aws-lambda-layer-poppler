@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "AWS Lambda Layer for `poppler` utils",
   "scripts": {
+    "build": "./bin/build",
     "lint": "eslint . --ext .js,.ts --ignore-path .gitignore",
+    "prune": "rm -rf cdk.out opt opt.zip out",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
