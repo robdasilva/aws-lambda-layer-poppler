@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rschweizer/aws-lambda-layer-poppler.git"
+    "url": "git+https://github.com/robdasilva/aws-lambda-layer-poppler.git"
   },
-  "author": "Robert Schweizer <mail@robertschweizer.me> (http://robertschweizer.me)",
+  "author": "Robert Da Silva <mail@robdasilva.com> (https://robdasilva.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rschweizer/aws-lambda-layer-poppler/issues"
+    "url": "https://github.com/robdasilva/aws-lambda-layer-poppler/issues"
   },
-  "homepage": "https://github.com/rschweizer/aws-lambda-layer-poppler#readme",
+  "homepage": "https://github.com/robdasilva/aws-lambda-layer-poppler#readme",
   "devDependencies": {
     "@aws-cdk/assets": "^1.22.0",
     "@aws-cdk/aws-lambda": "^1.22.0",
