@@ -2,7 +2,7 @@
   "compilerOptions": {
     "alwaysStrict": true,
     "experimentalDecorators": true,
-    "lib": ["es2017"],
+    "lib": ["ESNext"],
     "module": "commonjs",
     "moduleResolution": "node",
     "noImplicitReturns": true,
@@ -11,6 +11,6 @@
     "outDir": "out",
     "resolveJsonModule": true,
     "strict": true,
-    "target": "es2017"
+    "target": "es2019"
   }
 }

@@ -7,15 +7,31 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
-    'prettier/@typescript-eslint',
+  ],
+  overrides: [
+    {
+      files: ['**/*.js'],
+      rules: {
+        '@typescript-eslint/no-var-requires': 'off',
+        'no-shadow': 'error',
+      },
+    },
   ],
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint', 'prettier'],
+  plugins: ['@typescript-eslint'],
+  root: true,
   rules: {
     '@typescript-eslint/explicit-function-return-type': 'off',
-    '@typescript-eslint/interface-name-prefix': [
+    '@typescript-eslint/naming-convention': [
       'error',
-      { prefixWithI: 'always' },
+      {
+        custom: {
+          match: true,
+          regex: '^I[A-Z]',
+        },
+        format: ['PascalCase'],
+        selector: 'interface',
+      },
     ],
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
@@ -24,6 +40,7 @@ module.exports = {
     eqeqeq: 'error',
     'func-style': ['error', 'declaration', { allowArrowFunctions: true }],
     'new-cap': 'error',
+    'newline-before-return': 'error',
     'no-shadow': 'error',
     'prefer-arrow-callback': 'error',
     'prefer-const': 'error',
