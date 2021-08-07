@@ -14,6 +14,7 @@ const layer = new LayerVersion(stack, 'AWSLambdaLayerPopplerLayerVersion', {
     Runtime.JAVA_11,
     Runtime.NODEJS_10_X,
     Runtime.NODEJS_12_X,
+    Runtime.NODEJS_14_X,
     Runtime.PYTHON_3_8,
   ],
   layerVersionName: name,
